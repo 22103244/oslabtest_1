@@ -1,0 +1,56 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+employee=np.array([
+    ["Adamya",3244],
+    ["Shivi",3243],
+    ["Anshika",3245],
+    ["Priyanshu",3246]
+],dtype=object)
+
+
+def add_emply(name,cd):
+    employee.append([name,cd])
+    return employee
+
+def attendance(name):
+    k=0
+    i=0
+    for empl in employee:
+        if employee[i]==name:
+            at=input("Enter the number of days out of 31: ")
+            att[k]=(at/30)*100
+            k=k+1
+            i=i+1
+
+def perform_rate(name):
+    rate=input("Enter performance rating for the employee: ")
+    for empl in employee:
+        if employee[0]==name:
+            rating=np.array([
+                [name,rate]],dtype=object)
+
+
+def salary():
+    add=0
+    i=0 
+    max=13000
+    min=200000
+    sal=np.array([
+        [100000],
+        [60000],
+        [70000],
+        [15000]],dtype=object)
+    for calc in sal:
+        add=add+sal[i]
+        if max<sal[i]:
+            max=sal[i]
+            d=i
+        if min>sal[i]:
+            min=sal[i]
+            c=i
+        i=i+1
+    avg=add/4
+    print("Average Salary:- ",add)
+    print("Max Salary:- ",max)
+    print("Min Salary:- ",min)
